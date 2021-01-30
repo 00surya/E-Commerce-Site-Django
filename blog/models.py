@@ -7,6 +7,7 @@ from django.db import models
 class Blogpost(models.Model):
     post_id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=50)
+    author_Name = models.CharField(max_length=30, default="My Awesome Cart")
     head0 = models.CharField(max_length=500, default="")
     chead0 = models.CharField(max_length=5000, default="")
     head1 = models.CharField(max_length=500, default="")
